@@ -5,7 +5,9 @@
     "packages/*"
   ],
   "scripts": {
-    "@testing-library/react": "^11.2.5",
+    "start": "docz dev",
+    "build": "docz build",
+    "clean": "rm -rf .docz",
     "lint:js": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint": "npm run lint:js",
     "test": "jest --coverage",
@@ -35,6 +37,7 @@
   },
   "dependencies": {
     "@testing-library/react": "^11.2.5",
-    "chalk": "^4.1.0"
+    "chalk": "^4.1.0",
+    "docz": "^2.3.1"
   }
 }

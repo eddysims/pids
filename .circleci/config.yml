@@ -11,11 +11,11 @@ references:
   restore_cache: &restore_cache
     restore_cache:
       keys:
-        - node-v1-{{ checksum "package.json" }}
+        - node-v1-{{ checksum "yarn.lock" }}
         - node-v1-
 
   install_deps: &install_deps
-    run: npm install
+    run: yarn install --frozen-lockfile
 
 jobs:
   lint:
@@ -25,7 +25,7 @@ jobs:
       - *restore_cache
       - *install_deps
       - save_cache:
-          key: node-v1-{{ checksum "package.json" }}
+          key: node-v1-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
       - run:

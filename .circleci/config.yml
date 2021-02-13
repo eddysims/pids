@@ -30,7 +30,7 @@ jobs:
                   if git log --max-count=1 --pretty=%s | grep -q "chore(release): Publish modules"; then
                     echo "Skip" && exit 0
                   else
-                    yarn publish
+                    yarn ci:release
                   fi
 
 workflows:

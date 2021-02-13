@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "prerelease": "lerna publish --canary --contents dist",
-    "publish": "lerna publish --yes --no-verify-access --contents dist"
+    "ci:release": "lerna publish --yes --no-verify-access --contents dist"
   },
   "devDependencies": {
     "lerna": "^3.22.1"

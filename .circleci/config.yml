@@ -32,6 +32,20 @@ jobs:
           name: Lint
           command: yarn lint:js
 
+  test:
+    <<: *container_config
+    steps:
+      - checkout
+      - *restore_cache
+      - *install_deps
+      - save_cache:
+          key: node-v1-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+      - run:
+          name: Lint
+          command: yarn test
+
   release:
     <<: *container_config
     steps:
@@ -71,3 +85,4 @@ workflows:
                 only: "main"
             requires:
               - lint
+              - test

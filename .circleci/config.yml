@@ -17,7 +17,7 @@ jobs:
                   git config user.name "$GITHUB_USER_NAME"
             - add_ssh_keys:
                 fingerprints:
-                  - "98:00:d0:0b:a1:cd:d0:d4:e9:24:d5:71:1b:22:b6:96"
+                  - "4b:fa:ed:50:b3:4e:f0:b5:44:15:58:40:cf:4d:bd:22"
             - run: 
                 name: Authenticate with NPM
                 command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc

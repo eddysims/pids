@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "prebuild": "rm -rf dist",
+    "build": "tsc && node ../../scripts/moveFiles",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@types/react": "^17.0.2",

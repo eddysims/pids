@@ -43,7 +43,7 @@ jobs:
           paths:
             - node_modules
       - run:
-          name: Lint
+          name: Test
           command: yarn test
 
   release:

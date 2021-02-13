@@ -62,4 +62,12 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      files: ["./doczrc.js"],
+      rules: {
+        "import/no-default-export": "off",
+      },
+    },
+  ],
 };

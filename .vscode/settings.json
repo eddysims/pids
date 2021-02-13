@@ -1,0 +1,20 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#aaffa8",
+    "statusBarItem.hoverBackground": "#60de5d",
+    "statusBar.foreground": "#555555"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+
+    "**/node_modules/**": true,
+    "**/dist/**": true
+  }
+}

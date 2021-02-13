@@ -2,5 +2,20 @@
   "packages": ["packages/*"],
   "version": "independent",
   "npmClient": "yarn",
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "command": {
+    "version": {
+      "conventionalCommits": true,
+      "message": "chore(release): Publish modules",
+      "allowBranch": ["main"]
+    },
+    "publish": {
+      "ignoreChanges": [
+        "lerna.json",
+        "package.json",
+        "package-lock.json",
+        "CHANGELOG.md"
+      ]
+    }
+  }
 }

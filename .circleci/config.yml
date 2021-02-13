@@ -1,0 +1,42 @@
+version: 2.1
+orbs:
+  node: circleci/node@1.1.6
+jobs:
+  release:
+    docker:
+      - image: circleci/node
+    resource_class: small
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run:
+                name: Authenticate with Github
+                command: |
+                  git config user.email "$GITHUB_USER_EMAIL"
+                  git config user.name "$GITHUB_USER_NAME"
+            - add_ssh_keys:
+                fingerprints:
+                  - "98:00:d0:0b:a1:cd:d0:d4:e9:24:d5:71:1b:22:b6:96"
+            - run: 
+                name: Authenticate with NPM
+                command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+            - run: 
+                name: Lerna Bootstrap
+                command: npx lerna bootstrap
+            - run: 
+                name: Release
+                command: | 
+                  if git log --max-count=1 --pretty=%s | grep -q "chore(release): Publish modules"; then
+                    echo "Skip" && exit 0
+                  else
+                    yarn publish
+                  fi
+
+workflows:
+    build-and-test:
+      jobs:
+        - release:
+            filters:
+              branches:
+                only: main

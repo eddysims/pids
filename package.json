@@ -2,6 +2,9 @@
   "name": "pids",
   "private": true,
   "workspaces": ["packages/*"],
+  "scripts": {
+    "prerelease": "lerna publish --canary --contents dist"
+  },
   "devDependencies": {
     "lerna": "^3.22.1"
   }

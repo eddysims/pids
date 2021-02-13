@@ -5,7 +5,7 @@ route: /components/button
 ---
 
 import { Props, Playground } from 'docz';
-import { Button } from './';
+import { Button } from './index';
 
 # Button
 
@@ -14,4 +14,12 @@ A button component allows a user to take an action.
 ```
 import { Button } from '@pids/components/Button'
 ```
+
+<Playground>
+  <Button label="I am a button" onClick={() => alert("Clicked")} />
+</Playground>
+
+## Props 
+
+<Props of={Button} />
 

@@ -5,7 +5,7 @@ interface ButtonProps {
   onClick(): void;
 }
 
-export function Button({ label, onClick }: ButtonProps) {
+export function Button({ label = "Button", onClick }: ButtonProps) {
   return (
     <button type="button" onClick={handleClick}>
       {label}

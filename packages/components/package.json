@@ -8,10 +8,14 @@
   },
   "scripts": {
     "prebuild": "rm -rf dist",
-    "build": "tsc && node ../../scripts/moveFiles",
+    "build": "rollup --config",
+    "postbuild": "node ../../scripts/moveFiles",
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
+    "rollup": "^2.39.0",
+    "rollup-plugin-multi-input": "^1.2.0",
+    "rollup-plugin-typescript2": "^0.29.0",
     "typescript": "^4.1.5"
   },
   "dependencies": {

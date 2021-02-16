@@ -64,7 +64,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["./doczrc.js"],
+      files: ["./doczrc.js", "**/rollup.config.js"],
       rules: {
         "import/no-default-export": "off",
       },

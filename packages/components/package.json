@@ -7,11 +7,20 @@
     "access": "public"
   },
   "scripts": {
-    "prebuild": "rm -rf dist",
-    "build": "tsc && node ../../scripts/moveFiles",
-    "prepublishOnly": "npm run build"
+    "prebuild": "rm -rf dist && yarn build:cssTypes",
+    "build": "rollup --config",
+    "postbuild": "node ../../scripts/moveFiles",
+    "prepublishOnly": "npm run build",
+    "build:cssTypes": "tcm src"
   },
   "devDependencies": {
+    "postcss": "^8.2.6",
+    "postcss-preset-env": "^6.7.0",
+    "rollup": "^2.39.0",
+    "rollup-plugin-multi-input": "^1.2.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "typed-css-modules": "^0.6.5",
     "typescript": "^4.1.5"
   },
   "dependencies": {

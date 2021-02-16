@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./Button.css";
+import styles from "./Button.module.css";
 
 interface ButtonProps {
   readonly label: string;

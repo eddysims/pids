@@ -9,10 +9,7 @@ export default {
     multiInput(),
     typescript({ declarationDir: "dist" }),
     postcss({
-      modules: {
-        generateScopedName: "[hash:base64]",
-        globalModulePaths: [/node_modules/],
-      },
+      modules: true,
       minimize: true,
       plugins: [
         postCssPresetEnv({

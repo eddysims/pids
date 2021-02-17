@@ -9,7 +9,8 @@
   "scripts": {
     "prebuild": "rm -rf dist",
     "build": "rollup --config",
-    "postbuild": "node ../../scripts/moveFiles"
+    "postbuild": "node ../../scripts/moveFiles",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "postcss": "^8.2.6",

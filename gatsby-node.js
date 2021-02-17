@@ -1,3 +1,5 @@
+const path = require("path");
+
 exports.onCreateWebpackConfig = ({
   stage,
   rules,
@@ -33,6 +35,11 @@ exports.onCreateWebpackConfig = ({
     config.module.rules.push({
       test: /(?:packages|docs)\/.*\.(?:js|jsx|ts|tsx)$/,
       use: loaders.null(),
+    });
+
+    config.module.rules.push({
+      test: /.*\.(?:md|mdx)$/,
+      use: path.resolve("../scripts/nullMarkdownLoader.js"),
     });
   }
 

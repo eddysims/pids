@@ -10,6 +10,7 @@
   "scripts": {
     "start": "docz dev",
     "build": "docz build",
+    "serve": "docz serve",
     "clean": "rm -rf .docz",
     "lint:js": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint": "npm run lint:js",
@@ -39,12 +40,17 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
     "lerna": "^3.22.1",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "typed-css-modules-loader": "^0.0.18"
   },
   "dependencies": {
     "@testing-library/react": "^11.2.5",
     "chalk": "^4.1.0",
     "docz": "^2.3.1",
     "semver": "^7.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddysims/pids.git"
   }
 }

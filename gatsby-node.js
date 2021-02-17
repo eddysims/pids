@@ -1,4 +1,5 @@
-import path from "path";
+/* eslint-disable @typescript-eslint/no-var-requires */
+const path = require("path");
 
 exports.onCreateWebpackConfig = ({
   stage,
@@ -9,13 +10,25 @@ exports.onCreateWebpackConfig = ({
 }) => {
   const config = getConfig();
 
+  config.module.rules.push({
+    enforce: "pre",
+    test: /\.css$/,
+    exclude: /node_modules/,
+    use: [require.resolve("typed-css-modules-loader")],
+  });
+
+  config.module.rules.push({
+    test: rules.css().test,
+    include: /^((?!node_modules).)*$/,
+  });
+
   const cssRule = {
     ...rules.cssModules(),
     test: rules.css().test,
     include: /^((?!node_modules).)*$/,
   };
 
-  const libCssRule = {
+  const libraryCssRule = {
     ...rules.css(),
     test: rules.css().test,
     include: /node_modules/,
@@ -23,11 +36,11 @@ exports.onCreateWebpackConfig = ({
 
   config.module.rules = [
     ...config.module.rules.filter((rule) => {
-      const cssRules =
+      const rulesToIgnore =
         rule.oneOf && rule.oneOf.some((r) => r.test.test("style.css"));
-      return !cssRules;
+      return !rulesToIgnore;
     }),
-    libCssRule,
+    libraryCssRule,
     cssRule,
   ];
 
@@ -42,6 +55,11 @@ exports.onCreateWebpackConfig = ({
       use: path.resolve("../scripts/nullMarkdownLoader.js"),
     });
   }
+
+  config.resolve.alias = {
+    ...config.resolve.alias,
+    "@pids/components": path.resolve(__dirname, "../packages/components/src"),
+  };
 
   actions.replaceWebpackConfig(config);
 };

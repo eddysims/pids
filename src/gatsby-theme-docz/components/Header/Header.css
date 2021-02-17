@@ -1,0 +1,20 @@
+.header {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  display: block;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}

@@ -1,13 +1,13 @@
-import css from "rollup-plugin-css-only";
 import fs from "fs";
+import css from "rollup-plugin-css-only";
 
 export default {
   input: "buildStyles.js",
   dest: "bundle.js",
   plugins: [
     css({
-      output: function (styles, nodes) {
-        var dir = "./dist";
+      output(styles) {
+        const dir = "./dist";
 
         if (!fs.existsSync(dir)) {
           fs.mkdirSync(dir);

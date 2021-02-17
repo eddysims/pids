@@ -1,2 +1,2 @@
-import './src/colors.css'
-import './src/root.css'
+import "./src/colors.css";
+import "./src/root.css";

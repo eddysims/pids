@@ -17768,7 +17768,15 @@ type@^2.0.0:
   resolved "https://registry.yarnpkg.com/type/-/type-2.2.0.tgz#3edd448793f517d8b9dd108b486a043f5befd91f"
   integrity sha512-M/u37b4oSGlusaU8ZB96BfFPWQ8MbsZYXB+kXGMiDj6IKinkcNaQvmirBuWj8mAXqP6LYn1rQvbTYum3yPhaOA==
 
-typed-css-modules@^0.6.5:
+typed-css-modules-loader@^0.0.18:
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/typed-css-modules-loader/-/typed-css-modules-loader-0.0.18.tgz#ee4e9b30f6819e19434b40e37064ae36f7679113"
+  integrity sha512-w7RK5CeycywiqsXIvmWN/vPEs6aSKs39bsfvqJDfRhpbzBbBu+Isat/Qm833S3z5nNHlkhRmVCDiwODQjS/Yxg==
+  dependencies:
+    loader-utils "^1.1.0"
+    typed-css-modules "^0.6.2"
+
+typed-css-modules@^0.6.2, typed-css-modules@^0.6.5:
   version "0.6.5"
   resolved "https://registry.yarnpkg.com/typed-css-modules/-/typed-css-modules-0.6.5.tgz#a0dd27be3d9013a86fd656d4c24ad29e1643631c"
   integrity sha512-f+RmiKmrDeeIeDHC/NnRJzrwxkTDgnWT6eJbTN0FqxV5SLFRik+WLJNrlWzjevlZ7Uuqhdh0e55lz+PgXUNflA==

@@ -14,5 +14,5 @@ export default {
 };
 
 function getPackages() {
-  return ["components"];
+  return ["components", "design"];
 }

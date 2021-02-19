@@ -1,9 +1,10 @@
 .header {
-  padding: 1rem 2rem;
+  padding: var(--pids-space--base) var(--pids-space--large);
   border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: white;
 }
 
 .header img {

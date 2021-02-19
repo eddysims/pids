@@ -1,0 +1,4 @@
+:root {
+  --pids-space--base: 16px;
+  --pids-space--large: calc(var(--pids-space--base) * 2)
+}

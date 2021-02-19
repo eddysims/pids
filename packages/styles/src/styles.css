@@ -1,5 +1,11 @@
 @import './colors.css';
+@import './fonts.css';
+@import './space.css';
 
 body {
   margin: 0;
+  background: var(--pids-colors--background, #fff);
+  color: var(--pids-colors--text, #333);
+  font-family: var(--pids-font-family--base, sans-serif);
+  font-size: var(--pids-font-size--base, 16px);
 }

@@ -11,8 +11,11 @@ export default {
     ...packages.map((pack) => `./packages/${pack}/src/**/*.{md,mdx}`),
     ...packages.map((pack) => `./packages/${pack}/CHANGELOG.md`),
   ],
+  docgenConfig: {
+    searchPatterns: ["./packages/components/**/*.{ts,tsx}"],
+  },
 };
 
 function getPackages() {
-  return ["components"];
+  return ["components", "design"];
 }

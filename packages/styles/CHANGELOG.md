@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/eddysims/pids/compare/@pids/styles@0.2.0...@pids/styles@0.3.0) (2021-02-19)
+
+
+### Features
+
+* add base styles ([#9](https://github.com/eddysims/pids/issues/9)) ([76096b7](https://github.com/eddysims/pids/commit/76096b71ebcdc127efa4d0ce9ed7254b5238fd04))
+
+
+
+
+
 # [0.2.0](https://github.com/eddysims/pids/compare/@pids/styles@0.1.0...@pids/styles@0.2.0) (2021-02-19)
 
 

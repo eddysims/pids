@@ -13,7 +13,7 @@ exports.onCreateWebpackConfig = ({
   config.module.rules.push({
     enforce: "pre",
     test: /\.css$/,
-    exclude: /node_modules/,
+    exclude: /styles/,
     use: [require.resolve("typed-css-modules-loader")],
   });
 
@@ -58,6 +58,7 @@ exports.onCreateWebpackConfig = ({
 
   config.resolve.alias = {
     ...config.resolve.alias,
+    "@pids/styles": path.resolve(__dirname, "../packages/styles/src"),
     "@pids/components": path.resolve(__dirname, "../packages/components/src"),
   };
 

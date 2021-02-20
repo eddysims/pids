@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useMenus, Link, MenuItem } from "docz";
 import { XOR } from "ts-xor";
 
-import { Icon } from '@pids/components/Icon';
+import { Icon } from "@pids/components/Icon";
 
 import styles from "./Sidebar.css";
 
@@ -56,8 +56,6 @@ function MainLink({ label, url, onClick, open }: MainLinkProps) {
       </Link>
     );
   }
-
-  const className = open ? "" : styles.arrow;
 
   return (
     <button type="button" onClick={handleClick} className={styles.mainLink}>

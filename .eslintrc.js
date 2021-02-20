@@ -21,7 +21,10 @@ module.exports = {
         extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
       alias: {
-        map: [["@pids/styles", "./packages/styles"]],
+        map: [
+          ["@pids/styles", "./packages/styles"],
+          ["@pids/components", "./packages/components/src"],
+        ],
         extensions: [".ts", ".tsx", ".js", ".jsx", ".json"],
       },
     },
@@ -63,7 +66,7 @@ module.exports = {
       files: [
         "./doczrc.js",
         "**/rollup.config.js",
-        "./src/gatsby-theme-docz/wrapper.tsx",
+        "./packages/docz-theme/src/gatsby-theme-docz/wrapper.*",
       ],
       rules: {
         "import/no-default-export": "off",

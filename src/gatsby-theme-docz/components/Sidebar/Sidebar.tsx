@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useMenus, Link, MenuItem } from "docz";
 import { XOR } from "ts-xor";
 
+import { Icon } from '@pids/components/Icon';
+
 import styles from "./Sidebar.css";
 
 export function Sidebar() {
@@ -59,7 +61,7 @@ function MainLink({ label, url, onClick, open }: MainLinkProps) {
 
   return (
     <button type="button" onClick={handleClick} className={styles.mainLink}>
-      {label} <span className={className}>&#94;</span>
+      {label} <Icon icon={open ? "ChevronUp" : "ChevronDown"} size="small" />
     </button>
   );
 

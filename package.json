@@ -34,7 +34,7 @@
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.2.0",
     "eslint-import-resolver-alias": "^1.1.2",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "2.18.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
@@ -56,9 +56,9 @@
     "ts-xor": "^1.0.8"
   },
   "peerDependencies": {
-    "react-live": "*",
+    "gatsby-theme-docz": "*",
     "re-resizable": "*",
-    "gatsby-theme-docz": "*"
+    "react-live": "*"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,6 @@
 import React from "react";
 import { useConfig, useCurrentDoc, Link } from "docz";
+import { Icon } from '@pids/components/Icon';
 import { Logo } from "../Logo";
 import styles from "./Header.css";
 
@@ -13,10 +14,10 @@ export function Header() {
         {route === "/" ? (
           <Logo />
         ) : (
-          <Link to="/" aria-label="Go to home page">
-            <Logo />
-          </Link>
-        )}
+            <Link to="/" aria-label="Go to home page">
+              <Logo />
+            </Link>
+          )}
       </div>
       <div className={styles.actions}>
         {repository && (
@@ -29,10 +30,11 @@ export function Header() {
         )}
         {edit && link && (
           <a href={link} target="_blank" rel="noopener noreferrer">
-            Edit page
+            <Icon icon="Edit" />
           </a>
         )}
-        Hamburger Menu
+        <Icon icon="Menu" />
+        <Icon icon="Sun" />
       </div>
     </header>
   );

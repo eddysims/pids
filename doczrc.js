@@ -3,6 +3,7 @@ const packages = getPackages();
 export default {
   title: "Pids Design System",
   description: "A dope design system",
+  menu: ["Introduction", "Components", "Styles"],
   typescript: true,
   host: "0.0.0.0",
   port: 8888,

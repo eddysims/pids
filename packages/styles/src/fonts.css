@@ -3,5 +3,6 @@
 }
 
 :root {
+  --pids-font-size--small: calc(var(--pids-font-size--small) /.875);
   --pids-font-size--base: 16px;
 }

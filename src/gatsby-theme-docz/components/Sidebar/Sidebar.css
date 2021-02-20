@@ -1,0 +1,42 @@
+.sidebar {
+  border-right: 1px solid #eee;
+  background: #fff;
+  height: 100%;
+}
+
+.navigation {
+  padding: var(--pids-space--large);
+}
+
+.item {
+  margin: var(--pids-space--base) 0;
+}
+
+.mainLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  appearance: none;
+  border: none;
+  background: none;
+  padding: 0;
+  position: relative;
+  font-size: var(--pids-font-size--small);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: var(--pids-colors--text);
+  transition: letter-spacing 300ms;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.mainLink:focus {
+  box-shadow: 0 0 10px var(--pids-colors--primary);
+  outline: none;
+}
+
+.arrow {
+  transform: rotate(180deg);
+}

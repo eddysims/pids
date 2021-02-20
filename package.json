@@ -55,6 +55,11 @@
     "semver": "^7.3.4",
     "ts-xor": "^1.0.8"
   },
+  "peerDependencies": {
+    "react-live": "*",
+    "re-resizable": "*",
+    "gatsby-theme-docz": "*"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eddysims/pids.git"

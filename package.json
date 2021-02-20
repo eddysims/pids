@@ -52,7 +52,8 @@
     "chalk": "^4.1.0",
     "docz": "^2.3.1",
     "react": "^17.0.1",
-    "semver": "^7.3.4"
+    "semver": "^7.3.4",
+    "ts-xor": "^1.0.8"
   },
   "repository": {
     "type": "git",

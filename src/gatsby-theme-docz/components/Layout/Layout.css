@@ -1,0 +1,24 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 325px;
+}
+
+.content {
+  flex: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(var(--pids-space--base) * 48);
+  margin: 0 auto;
+}

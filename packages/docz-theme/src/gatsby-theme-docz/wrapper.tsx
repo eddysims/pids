@@ -1,13 +1,10 @@
-import React from "react";
-import { Button } from "@pids/components/Button";
+import React, { PropsWithChildren } from "react";
 
-function Wrapper() {
-  return (
-    <div>
-      Wrapper
-      <Button label="Hello" onClick={() => alert("hi")} />
-    </div>
-  );
+// eslint-disable-next-line import/no-unresolved
+import "@pids/styles/styles.css";
+
+function Wrapper({ children }: PropsWithChildren<unknown>) {
+  return <>{children}</>;
 }
 
 export default Wrapper;

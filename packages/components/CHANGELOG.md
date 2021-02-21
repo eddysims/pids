@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/eddysims/pids/compare/@pids/components@0.2.0...@pids/components@0.3.0) (2021-02-21)
+
+
+### Features
+
+* adds an Icon component ([#13](https://github.com/eddysims/pids/issues/13)) ([abeeb50](https://github.com/eddysims/pids/commit/abeeb50d049c3b17b3e791ec22bc5fa48575cb69))
+
+
+
+
+
 # [0.2.0](https://github.com/eddysims/pids/compare/@pids/components@0.1.1...@pids/components@0.2.0) (2021-02-19)
 
 

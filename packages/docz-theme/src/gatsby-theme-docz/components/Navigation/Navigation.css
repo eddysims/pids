@@ -1,0 +1,44 @@
+.navigation {
+  padding: 2rem;
+}
+
+.item {
+  margin: 0.5rem 0;
+}
+
+.topLevelLink {
+  appearance: none;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+  font-family: var(--pids-font-family--base);
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  color: var(--pids-colors--text);
+}
+
+.linkGroup {
+  margin: 0.25rem 0;
+}
+
+.levelTwoLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--pids-colors--text);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.levelTwoLink::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 1px;
+  background: var(--pids-colors--text);
+}

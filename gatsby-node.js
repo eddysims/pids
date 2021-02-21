@@ -1,25 +1,14 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require("path");
 
-exports.onCreateWebpackConfig = ({
-  stage,
-  rules,
-  actions,
-  loaders,
-  getConfig,
-}) => {
+exports.onCreateWebpackConfig = ({ rules, actions, getConfig }) => {
   const config = getConfig();
 
   config.module.rules.push({
     enforce: "pre",
     test: /\.css$/,
-    exclude: /styles/,
+    exclude: /node_modules/,
     use: [require.resolve("typed-css-modules-loader")],
-  });
-
-  config.module.rules.push({
-    test: rules.css().test,
-    include: /^((?!node_modules).)*$/,
   });
 
   const cssRule = {
@@ -43,18 +32,6 @@ exports.onCreateWebpackConfig = ({
     libraryCssRule,
     cssRule,
   ];
-
-  if (stage.includes("html")) {
-    config.module.rules.push({
-      test: /(?:packages|docs)\/.*\.(?:js|jsx|ts|tsx)$/,
-      use: loaders.null(),
-    });
-
-    config.module.rules.push({
-      test: /.*\.(?:md|mdx)$/,
-      use: path.resolve("../scripts/nullMarkdownLoader.js"),
-    });
-  }
 
   config.resolve.alias = {
     ...config.resolve.alias,

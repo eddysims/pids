@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { XOR } from "ts-xor";
 import { useMenus, Link, MenuItem } from "docz";
+import { Icon } from "@pids/components/Icon";
 
 import styles from "./Navigation.css";
 
@@ -41,12 +42,13 @@ interface TopLevelLinkLinkProps extends TopLevelLinkBaseProps {
 }
 
 interface TopLevelLinkButtonProps extends TopLevelLinkBaseProps {
+  readonly open?: boolean;
   onClick(): void;
 }
 
 type TopLevelLinkProps = XOR<TopLevelLinkLinkProps, TopLevelLinkButtonProps>;
 
-function TopLevelLink({ label, url, onClick }: TopLevelLinkProps) {
+function TopLevelLink({ label, url, open, onClick }: TopLevelLinkProps) {
   if (url) {
     return (
       <Link to={url} className={styles.topLevelLink}>
@@ -57,7 +59,7 @@ function TopLevelLink({ label, url, onClick }: TopLevelLinkProps) {
 
   return (
     <button type="button" onClick={onClick} className={styles.topLevelLink}>
-      {label}
+      {label} <Icon icon={open ? "ChevronUp" : "ChevronDown"} size="small" />
     </button>
   );
 }
@@ -67,26 +69,32 @@ interface LinkGroupProps {
 }
 
 function LinkGroup({ menu }: LinkGroupProps) {
+  const [open, setOpen] = useState(false);
+
   if (!menu.menu) {
     return <></>;
   }
 
   return (
     <>
-      <TopLevelLink label={menu.name} onClick={handleClick} />
+      <TopLevelLink label={menu.name} onClick={handleClick} open={open} />
       <div className={styles.linkGroup}>
-        {menu.menu.map((subMenu) => {
-          return (
-            <Link to={subMenu.route as string} className={styles.levelTwoLink}>
-              {subMenu.name}
-            </Link>
-          );
-        })}
+        {open &&
+          menu.menu.map((subMenu) => {
+            return (
+              <Link
+                to={subMenu.route as string}
+                className={styles.levelTwoLink}
+              >
+                {subMenu.name}
+              </Link>
+            );
+          })}
       </div>
     </>
   );
 
   function handleClick() {
-    alert("hi");
+    setOpen(!open);
   }
 }

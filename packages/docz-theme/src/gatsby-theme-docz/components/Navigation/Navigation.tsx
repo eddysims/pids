@@ -1,5 +1,5 @@
 import React from "react";
-import { XOR } from 'ts-xor';
+import { XOR } from "ts-xor";
 import { useMenus, Link, MenuItem } from "docz";
 
 import styles from "./Navigation.css";
@@ -44,8 +44,7 @@ interface TopLevelLinkButtonProps extends TopLevelLinkBaseProps {
   onClick(): void;
 }
 
-type TopLevelLinkProps = XOR<TopLevelLinkLinkProps, TopLevelLinkButtonProps>
-
+type TopLevelLinkProps = XOR<TopLevelLinkLinkProps, TopLevelLinkButtonProps>;
 
 function TopLevelLink({ label, url, onClick }: TopLevelLinkProps) {
   if (url) {
@@ -56,7 +55,11 @@ function TopLevelLink({ label, url, onClick }: TopLevelLinkProps) {
     );
   }
 
-  return <button type="button" onClick={onClick} className={styles.topLevelLink}>{label}</button>
+  return (
+    <button type="button" onClick={onClick} className={styles.topLevelLink}>
+      {label}
+    </button>
+  );
 }
 
 interface LinkGroupProps {
@@ -64,26 +67,26 @@ interface LinkGroupProps {
 }
 
 function LinkGroup({ menu }: LinkGroupProps) {
-
   if (!menu.menu) {
-    return <></>
+    return <></>;
   }
 
   return (
     <>
       <TopLevelLink label={menu.name} onClick={handleClick} />
       <div className={styles.linkGroup}>
-        {menu.menu.map(menu => {
+        {menu.menu.map((menu) => {
           return (
-            <Link to={menu.route as string} className={styles.levelTwoLink}>{menu.name}</Link>
-          )
+            <Link to={menu.route as string} className={styles.levelTwoLink}>
+              {menu.name}
+            </Link>
+          );
         })}
       </div>
-
     </>
   );
 
   function handleClick() {
-    alert('hi')
+    alert("hi");
   }
 }

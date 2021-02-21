@@ -75,10 +75,10 @@ function LinkGroup({ menu }: LinkGroupProps) {
     <>
       <TopLevelLink label={menu.name} onClick={handleClick} />
       <div className={styles.linkGroup}>
-        {menu.menu.map((menu) => {
+        {menu.menu.map((subMenu) => {
           return (
-            <Link to={menu.route as string} className={styles.levelTwoLink}>
-              {menu.name}
+            <Link to={subMenu.route as string} className={styles.levelTwoLink}>
+              {subMenu.name}
             </Link>
           );
         })}

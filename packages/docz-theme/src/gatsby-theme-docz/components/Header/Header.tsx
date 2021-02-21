@@ -1,5 +1,6 @@
 import React from "react";
 import { useConfig, useCurrentDoc, Link } from "docz";
+import { Button } from "@pids/components/Button";
 import { Logo } from "../Logo";
 
 import styles from "./Header.css";
@@ -19,7 +20,7 @@ export function Header() {
 
       <div className={styles.actions}>
         <GithubStars />
-        <div>Edit</div>
+        <Button label="Edit" onClick={() => alert("Edit this page")} />
         <div>Mode</div>
         <div>Menu</div>
       </div>

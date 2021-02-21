@@ -1,10 +1,12 @@
 import React from "react";
+import classnames from "classnames";
 import { XOR } from "ts-xor";
 import { Icon, IconType } from "../Icon";
 
 import styles from "./Button.css";
 
 interface ButtonBaseProps {
+  readonly variation?: 'filled' | 'ghost';
   onClick(): void;
 }
 
@@ -24,12 +26,14 @@ interface ButtonNoIconProps extends ButtonBaseProps {
 
 type ButtonProps = XOR<ButtonIconProps, ButtonNoIconProps>;
 
-export function Button({ label, icon, ariaLabel, onClick }: ButtonProps) {
+export function Button({ label, icon, variation = 'filled', ariaLabel, onClick }: ButtonProps) {
+  const buttonClasses = classnames(styles.button, styles[variation]);
+
   return (
     <button
       type="button"
       onClick={handleClick}
-      className={styles.button}
+      className={buttonClasses}
       aria-label={ariaLabel}
     >
       {icon && <Icon icon={icon} />}

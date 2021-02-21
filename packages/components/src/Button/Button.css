@@ -4,7 +4,6 @@
   gap: .5em;
   height: 3rem;
   appearance: none;
-  background: var(--pids-colors--primary);
   border: none;
   font-size: 15px;
   font-family: var(--pids-font-family--base);
@@ -13,9 +12,22 @@
   font-weight: 700;
   text-transform: uppercase;
   color: var(--pids-colors--text);
+  transition: background 300ms;
 }
 
 .button:focus {
   outline: none;
   box-shadow: 0 0 10px var(--pids-colors--primary);
+}
+
+.filled {
+  background: var(--pids-colors--primary);
+}
+
+.ghost {
+  background: none;
+}
+
+.ghost:hover {
+  background: #eee;
 }

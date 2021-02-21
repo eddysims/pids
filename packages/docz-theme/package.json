@@ -1,12 +1,12 @@
 {
   "name": "@pids/docz-theme",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "@pids/components": "^0.2.0",
-    "@pids/styles": "^0.4.0",
+    "@pids/styles": "^0.4.1",
     "ts-xor": "^1.0.8",
     "typescript": "^4.1.5"
   },

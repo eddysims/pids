@@ -3,11 +3,14 @@
 }
 
 .item {
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
 
 .topLevelLink {
   appearance: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: none;
   background: none;
   width: 100%;
@@ -20,6 +23,7 @@
   letter-spacing: 0.05rem;
   text-decoration: none;
   color: var(--pids-colors--text);
+  margin: 0.5rem 0;
 }
 
 .linkGroup {

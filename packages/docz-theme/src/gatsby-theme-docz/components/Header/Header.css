@@ -9,6 +9,10 @@
   border-bottom: 1px solid #eee;
 }
 
+.header a {
+  display: inherit;
+}
+
 .actions {
   display: flex;
   align-items: center;

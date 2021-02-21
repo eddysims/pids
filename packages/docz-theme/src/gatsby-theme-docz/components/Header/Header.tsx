@@ -1,12 +1,22 @@
 import React from "react";
-import { useConfig } from "docz";
+import { useConfig, useCurrentDoc, Link } from "docz";
+import { Logo } from "../Logo";
 
 import styles from "./Header.css";
 
 export function Header() {
+  const { route } = useCurrentDoc();
+
   return (
     <div className={styles.header}>
-      Logo
+      {route === "/" ? (
+        <Logo />
+      ) : (
+        <Link to="/">
+          <Logo />
+        </Link>
+      )}
+
       <div className={styles.actions}>
         <GithubStars />
         <div>Edit</div>

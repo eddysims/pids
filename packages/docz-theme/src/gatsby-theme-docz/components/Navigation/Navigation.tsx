@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { XOR } from "ts-xor";
 import { useMenus, Link, MenuItem } from "docz";
-import { Icon } from '@pids/components/Icon';
+import { Icon } from "@pids/components/Icon";
 
 import styles from "./Navigation.css";
 
@@ -79,18 +79,22 @@ function LinkGroup({ menu }: LinkGroupProps) {
     <>
       <TopLevelLink label={menu.name} onClick={handleClick} open={open} />
       <div className={styles.linkGroup}>
-        {open && menu.menu.map((subMenu) => {
-          return (
-            <Link to={subMenu.route as string} className={styles.levelTwoLink}>
-              {subMenu.name}
-            </Link>
-          );
-        })}
+        {open &&
+          menu.menu.map((subMenu) => {
+            return (
+              <Link
+                to={subMenu.route as string}
+                className={styles.levelTwoLink}
+              >
+                {subMenu.name}
+              </Link>
+            );
+          })}
       </div>
     </>
   );
 
   function handleClick() {
-    setOpen(!open)
+    setOpen(!open);
   }
 }

@@ -1,0 +1,16 @@
+.text {
+  margin: 0;
+  margin-bottom: var(--pids-space--medium);
+}
+
+.text:last-of-type {
+  margin-bottom: 0;
+}
+
+.base {
+  font-size: var(--pids-font-size--base, 1rem);
+}
+
+.large {
+  font-size: var(--pids-font-size--medium, 1rem);
+}

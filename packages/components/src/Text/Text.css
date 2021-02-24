@@ -12,5 +12,5 @@
 }
 
 .large {
-  font-size: var(--pids-font-size--medium, 1rem);
+  font-size: var(--pids-font-size--medium, 1.5rem);
 }

@@ -1,0 +1,24 @@
+:root {
+  --pids-components--heading--h1-font-size: var(--pids-font-size--huge);
+  --pids-components--heading--h2-font-size: var(--pids-font-size--largest);
+}
+
+.heading {
+  font-family: var(--pids--font-family--display, sans-serif);
+}
+
+.h1 {
+  font-size: var(--pids-components--heading--h1-font-size, 3rem);
+  font-weight: var(--pids-font-weight--bold);
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.h2 {
+  font-size: var(--pids-components--heading--h2-font-size, 3rem);
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+

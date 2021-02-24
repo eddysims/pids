@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/eddysims/pids/compare/@pids/components@0.4.0...@pids/components@0.5.0) (2021-02-24)
+
+
+### Features
+
+* adds the Text component ([#16](https://github.com/eddysims/pids/issues/16)) ([88b5b63](https://github.com/eddysims/pids/commit/88b5b63da8ad635613a57751bdb260ad5ef10baa))
+
+
+
+
+
 # [0.4.0](https://github.com/eddysims/pids/compare/@pids/components@0.3.0...@pids/components@0.4.0) (2021-02-24)
 
 

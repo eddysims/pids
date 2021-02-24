@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from "react";
-import { useCurrentDoc } from 'docz';
-import { Heading } from '@pids/components/Heading';
+import { useCurrentDoc } from "docz";
+import { Heading } from "@pids/components/Heading";
 import { Header } from "../Header";
 import { Sidebar } from "../Sidebar";
 

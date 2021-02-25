@@ -7,19 +7,45 @@ route: /components/button
 import { Props, Playground } from 'docz';
 import { Button } from '@pids/components/Button';
 
-# Button
 
-A button component allows a user to take an action.
+A `Button` component allows a user to take an action.
 
-```
+```ts
 import { Button } from '@pids/components/Button'
 ```
 
 <Playground>
-  <Button label="I am a button" onClick={() => alert("Clicked")} />
+  <Button label="What's my power level" onClick={() => alert("9001")} />
 </Playground>
 
 ## Props 
 
 <Props of={Button} />
+
+## Types
+
+### Primary
+
+A `Button` with a filled background.
+
+<Playground>
+  <Button type="filled" label="Click me" onClick={() => alert("Thanks")} />
+</Playground>
+
+### Outline
+
+A outline `Button`.
+
+<Playground>
+  <Button type="outline" label="Click me" onClick={() => alert("Thanks")} />
+</Playground>
+
+
+### Ghost
+
+A ghost `Button`.
+
+<Playground>
+  <Button type="ghost" label="Click me" onClick={() => alert("Thanks")} />
+</Playground>
 

@@ -1,4 +1,47 @@
+:root {
+  --pids-button--border-width: 1px;
+  --pids-button--height: 3rem;
+  --pids-button--padding-x: var(--pids-space--base)
+}
+
 .button {
-  background: blue;
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  height: var(--pids-button--height);
   appearance: none;
+  border: none;
+  font-size: 15px;
+  font-family: var(--pids-font-family--base);
+  padding: 0 var(--pids-button--padding-x);
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--pids-colors--text);
+  transition: background 300ms;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 10px var(--pids-colors--primary);
+}
+
+.primary {
+  background: var(--pids-colors--primary);
+}
+
+.outline {
+  height: calc(var(--pids-button--height) - var(--pids-button--border-width) - var(--pids-button--border-width));
+  background: none;
+  padding-left: calc(var(--pids-button--padding-x) - var(--pids-button--border-width));
+  padding-right: calc(var(--pids-button--padding-x) - var(--pids-button--border-width));
+  border: var(--pids-button--border-width) solid var(--pids-colors--primary);
+}
+
+.ghost {
+  background: none;
+}
+
+.ghost:hover {
+  background: #eee;
 }

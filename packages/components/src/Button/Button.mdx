@@ -4,21 +4,20 @@ menu: Components
 route: /components/button
 ---
 
-import { Props, Playground } from 'docz';
-import { Button } from '@pids/components/Button';
-
+import { Props, Playground } from "docz";
+import { Button } from "@pids/components/Button";
 
 A `Button` component allows a user to take an action.
 
 ```ts
-import { Button } from '@pids/components/Button'
+import { Button } from "@pids/components/Button";
 ```
 
 <Playground>
   <Button label="What's my power level" onClick={() => alert("9001")} />
 </Playground>
 
-## Props 
+## Props
 
 <Props of={Button} />
 
@@ -40,7 +39,6 @@ A outline `Button`.
   <Button type="outline" label="Click me" onClick={() => alert("Thanks")} />
 </Playground>
 
-
 ### Ghost
 
 A ghost `Button`.
@@ -48,4 +46,3 @@ A ghost `Button`.
 <Playground>
   <Button type="ghost" label="Click me" onClick={() => alert("Thanks")} />
 </Playground>
-

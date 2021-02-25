@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/eddysims/pids/compare/@pids/components@0.5.1...@pids/components@0.6.0) (2021-02-25)
+
+
+### Features
+
+* add type and icon props to Button ([#14](https://github.com/eddysims/pids/issues/14)) ([85c1efb](https://github.com/eddysims/pids/commit/85c1efbd5f43a65f108324ab7388afb1e8e3e678))
+
+
+
+
+
 ## [0.5.1](https://github.com/eddysims/pids/compare/@pids/components@0.5.0...@pids/components@0.5.1) (2021-02-24)
 
 **Note:** Version bump only for package @pids/components

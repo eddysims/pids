@@ -10,7 +10,7 @@ import { Button } from '@pids/components/Button';
 
 A `Button` component allows a user to take an action.
 
-```
+```ts
 import { Button } from '@pids/components/Button'
 ```
 
@@ -21,4 +21,31 @@ import { Button } from '@pids/components/Button'
 ## Props 
 
 <Props of={Button} />
+
+## Types
+
+### Primary
+
+A `Button` with a filled background.
+
+<Playground>
+  <Button type="filled" label="Click me" onClick={() => alert("Thanks")} />
+</Playground>
+
+### Outline
+
+A outline `Button`.
+
+<Playground>
+  <Button type="outline" label="Click me" onClick={() => alert("Thanks")} />
+</Playground>
+
+
+### Ghost
+
+A ghost `Button`.
+
+<Playground>
+  <Button type="ghost" label="Click me" onClick={() => alert("Thanks")} />
+</Playground>
 

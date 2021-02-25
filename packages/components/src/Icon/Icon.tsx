@@ -1,8 +1,9 @@
 import React from "react";
 import * as Icons from "react-feather";
 
+export type IconType = keyof typeof Icons;
 interface IconProps {
-  readonly icon: keyof typeof Icons;
+  readonly icon: IconType;
   readonly size?: "small" | "base" | "large";
 }
 

@@ -1,17 +1,16 @@
 ---
 name: Heading
 menu: Components
+description: A `Heading` component is used as the title major sections of your pages or application. It is also used to give hierarchy of a section in the context of the page.
 route: /components/heading
 ---
 
 import { Playground, Props} from 'docz';
 import { Heading } from '@pids/components/Heading';
 
-# Heading
+## Usage
 
-A `Heading` component is used to headline imporant areas of ui or content.
-
-```
+```ts
 import { Heading } from "@pids/components/Heading";
 ```
 
@@ -22,3 +21,21 @@ import { Heading } from "@pids/components/Heading";
 ## Props
 
 <Props of={Heading} />
+
+## Heading 1
+
+A `Heading 1` should be used once per page. This should be used as the main title of the page and should appear as close to the top of the DOM as possible.
+
+<Playground>
+  <Heading as="h1">Heading 1</Heading>
+</Playground>
+
+## Themeing
+
+| CSS Propery                                | Default                     | Description                                                |
+| ------------------------------------------ | --------------------------- | ---------------------------------------------------------- |
+| `--pids--font-family--display`             | System Font                 | The font family that will be used for all of the headings. |
+| `--pids-components--heading--h1-font-size` | `--pids-font-size--huge`    | The font size that used for the prop `as="h1"`             |
+| `--pids-components--heading--h2-font-size` | `--pids-font-size--largest` | The font size that used for the prop `as="h2"`             |
+
+

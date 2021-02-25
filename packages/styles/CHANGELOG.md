@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/eddysims/pids/compare/@pids/styles@0.4.1...@pids/styles@0.5.0) (2021-02-24)
+
+
+### Features
+
+* add styling to Heading ([#15](https://github.com/eddysims/pids/issues/15)) ([a69e0ff](https://github.com/eddysims/pids/commit/a69e0ff0cc41fed3c1d4a93e00222ea41c046e95))
+
+
+
+
+
 ## [0.4.1](https://github.com/eddysims/pids/compare/@pids/styles@0.4.0...@pids/styles@0.4.1) (2021-02-21)
 
 **Note:** Version bump only for package @pids/styles

@@ -6,7 +6,7 @@ import { Icon, IconType } from "../Icon";
 import styles from "./Button.css";
 
 interface ButtonBaseProps {
-  readonly variation?: 'filled' | 'ghost';
+  readonly type?: "primary" | "outline" | "ghost";
   onClick(): void;
 }
 
@@ -26,8 +26,14 @@ interface ButtonNoIconProps extends ButtonBaseProps {
 
 type ButtonProps = XOR<ButtonIconProps, ButtonNoIconProps>;
 
-export function Button({ label, icon, variation = 'filled', ariaLabel, onClick }: ButtonProps) {
-  const buttonClasses = classnames(styles.button, styles[variation]);
+export function Button({
+  label,
+  icon,
+  type = "primary",
+  ariaLabel,
+  onClick,
+}: ButtonProps) {
+  const buttonClasses = classnames(styles.button, styles[type]);
 
   return (
     <button

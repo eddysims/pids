@@ -20,21 +20,25 @@ it("calls the onClick method", () => {
 });
 
 it("can have an Icon", () => {
-  const { getByTestId } = render(<Button label="Foo" icon="Circle" onClick={jest.fn()} />);
+  const { getByTestId } = render(
+    <Button label="Foo" icon="Circle" onClick={jest.fn()} />
+  );
 
-  expect(getByTestId('icon-Circle')).toBeInstanceOf(SVGElement);
+  expect(getByTestId("icon-Circle")).toBeInstanceOf(SVGElement);
 });
 
 it("adds the filled class by default", () => {
   const { getByText } = render(<Button label="Foo" onClick={jest.fn()} />);
   const button = getByText("Foo");
 
-  expect(button.classList.contains('filled')).toBeTruthy();
+  expect(button.classList.contains("primary")).toBeTruthy();
 });
 
 it("adds the ghost class by when ghost variation is set", () => {
-  const { getByText } = render(<Button label="Foo" variation="ghost" onClick={jest.fn()} />);
+  const { getByText } = render(
+    <Button label="Foo" type="ghost" onClick={jest.fn()} />
+  );
   const button = getByText("Foo");
 
-  expect(button.classList.contains('ghost')).toBeTruthy();
+  expect(button.classList.contains("ghost")).toBeTruthy();
 });

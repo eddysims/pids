@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { XOR } from "ts-xor";
 import { useMenus, Link, MenuItem } from "docz";
-import { Icon } from '@pids/components/Icon';
+import { Icon } from "@pids/components/Icon";
 
 import styles from "./Navigation.css";
 

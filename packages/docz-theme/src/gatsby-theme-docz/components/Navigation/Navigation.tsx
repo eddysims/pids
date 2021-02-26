@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { XOR } from "ts-xor";
-import { useMenus, Link, MenuItem } from "docz";
+import { useCurrentDoc, useMenus, Link, MenuItem } from "docz";
 import { Icon } from "@pids/components/Icon";
 
 import styles from "./Navigation.css";
@@ -69,7 +69,8 @@ interface LinkGroupProps {
 }
 
 function LinkGroup({ menu }: LinkGroupProps) {
-  const [open, setOpen] = useState(false);
+  const doc = useCurrentDoc();
+  const [open, setOpen] = useState(doc.menu === menu.name);
 
   if (!menu.menu) {
     return <></>;

@@ -21,13 +21,13 @@
 }
 
 .main {
-  padding-bottom: var(--pids-space--huge);
+  padding-bottom: var(--pids--space--huge);
 }
 
 .hero {
-  background: var(--pids-colors--primary);
-  padding: calc(var(--pids-space--huge) * 2) 0;
-  margin-bottom: var(--pids-space--huge);
+  background: var(--pids--color--primary);
+  padding: calc(var(--pids--space--huge) * 2) 0;
+  margin-bottom: var(--pids--space--huge);
 }
 
 .heroHome {

@@ -1,9 +1,9 @@
 :root {
-  --pids-space--small: calc(var(--pids-space--base) / .875);
-  --pids-space--base: 16px;
-  --pids-space--medium: calc(var(--pids-space--base) * 1.25);
-  --pids-space--large: calc(var(--pids-space--base) * 1.5);
-  --pids-space--larger: calc(var(--pids-space--base) * 2);
-  --pids-space--largest: calc(var(--pids-space--base) * 2.5);
-  --pids-space--huge: calc(var(--pids-space--base) * 3);
+  --pids--space--small: calc(var(--pids--space--base) / .875);
+  --pids--space--base: 16px;
+  --pids--space--medium: calc(var(--pids--space--base) * 1.25);
+  --pids--space--large: calc(var(--pids--space--base) * 1.5);
+  --pids--space--larger: calc(var(--pids--space--base) * 2);
+  --pids--space--largest: calc(var(--pids--space--base) * 2.5);
+  --pids--space--huge: calc(var(--pids--space--base) * 3);
 }

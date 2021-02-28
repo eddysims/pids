@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.3](https://github.com/eddysims/pids/compare/@pids/components@0.7.2...@pids/components@0.7.3) (2021-02-28)
+
+### Bug Fixes
+
+- Text and Heading styles ([#20](https://github.com/eddysims/pids/issues/20)) ([f32848e](https://github.com/eddysims/pids/commit/f32848e4aef3ac710f3e49ea21d8d47080c9d252))
+
+## [0.7.2](https://github.com/eddysims/pids/compare/@pids/components@0.7.1...@pids/components@0.7.2) (2021-02-28)
+
+**Note:** Version bump only for package @pids/components
+
 ## [0.7.1](https://github.com/eddysims/pids/compare/@pids/components@0.7.0...@pids/components@0.7.1) (2021-02-25)
 
 **Note:** Version bump only for package @pids/components

@@ -1,6 +1,6 @@
 :root {
-  --pids-colors--background: #fdfdfd;
-  --pids-colors--text: #555;
+  --pids--color--background: #fdfdfd;
+  --pids--color--text: #555;
 
-  --pids-colors--primary: #aaffa8
+  --pids--color--primary: #aaffa8;
 }

@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.6](https://github.com/eddysims/pids/compare/@pids/docz-theme@0.2.5...@pids/docz-theme@0.2.6) (2021-02-28)
+
+**Note:** Version bump only for package @pids/docz-theme
+
 ## [0.2.5](https://github.com/eddysims/pids/compare/@pids/docz-theme@0.2.4...@pids/docz-theme@0.2.5) (2021-02-25)
 
 **Note:** Version bump only for package @pids/docz-theme

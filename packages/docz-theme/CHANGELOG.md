@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.7](https://github.com/eddysims/pids/compare/@pids/docz-theme@0.2.6...@pids/docz-theme@0.2.7) (2021-02-28)
+
+### Bug Fixes
+
+- Text and Heading styles ([#20](https://github.com/eddysims/pids/issues/20)) ([f32848e](https://github.com/eddysims/pids/commit/f32848e4aef3ac710f3e49ea21d8d47080c9d252))
+
 ## [0.2.6](https://github.com/eddysims/pids/compare/@pids/docz-theme@0.2.5...@pids/docz-theme@0.2.6) (2021-02-28)
 
 **Note:** Version bump only for package @pids/docz-theme

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/eddysims/pids/compare/@pids/docz-theme@0.2.7...@pids/docz-theme@0.3.0) (2021-02-28)
+
+### Features
+
+- adds a Container component ([#21](https://github.com/eddysims/pids/issues/21)) ([1180f5a](https://github.com/eddysims/pids/commit/1180f5a1fe10752fcf19b062de1b6c79345347b6))
+
 ## [0.2.7](https://github.com/eddysims/pids/compare/@pids/docz-theme@0.2.6...@pids/docz-theme@0.2.7) (2021-02-28)
 
 ### Bug Fixes

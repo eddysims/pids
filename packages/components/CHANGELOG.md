@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/eddysims/pids/compare/@pids/components@0.7.3...@pids/components@0.8.0) (2021-02-28)
+
+### Features
+
+- adds a Container component ([#21](https://github.com/eddysims/pids/issues/21)) ([1180f5a](https://github.com/eddysims/pids/commit/1180f5a1fe10752fcf19b062de1b6c79345347b6))
+
 ## [0.7.3](https://github.com/eddysims/pids/compare/@pids/components@0.7.2...@pids/components@0.7.3) (2021-02-28)
 
 ### Bug Fixes

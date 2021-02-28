@@ -1,6 +1,6 @@
 .text {
   margin: 0;
-  margin-bottom: var(--pids-space--medium);
+  margin-bottom: var(--pids--space--medium);
 }
 
 .text:last-of-type {
@@ -8,9 +8,9 @@
 }
 
 .base {
-  font-size: var(--pids-font-size--base, 1rem);
+  font-size: var(--pids--font-size--base, 1rem);
 }
 
 .large {
-  font-size: var(--pids-font-size--medium, 1.5rem);
+  font-size: var(--pids--font-size--medium, 1.5rem);
 }

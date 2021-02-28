@@ -1,26 +1,26 @@
 :root {
-  --pids-components--heading--h1-font-size: var(--pids-font-size--huge);
-  --pids-components--heading--h2-font-size: var(--pids-font-size--largest);
-  --pids-components--heading--h3-font-size: var(--pids-font-size--large);
+  --pids--heading--font-size--as--h1: var(--pids--font-size--huge);
+  --pids--heading--font-size--as--h2: var(--pids--font-size--largest);
+  --pids--heading--font-size--as--h3: var(--pids--font-size--large);
 }
 
 .heading {
   font-family: var(--pids--font-family--display, sans-serif);
-  font-weight: var(--pids-font-weight--bold);
+  font-weight: var(--pids--font-weight--bold);
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .h1 {
-  font-size: var(--pids-components--heading--h1-font-size, 3rem);
+  font-size: var(--pids--heading--font-size--as--h1, 3rem);
 }
 
 .h2 {
-  font-size: var(--pids-components--heading--h2-font-size, 2.5rem);
+  font-size: var(--pids--heading--font-size--as--h2, 2.5rem);
 }
 
 .h3 {
-  font-size: var(--pids-components--heading--h3-font-size, 2rem);
+  font-size: var(--pids--heading--font-size--as--h3, 2rem);
 }
 

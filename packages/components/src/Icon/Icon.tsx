@@ -19,7 +19,7 @@ export function Icon({ icon, size = "base" }: IconProps) {
   return (
     <Element
       size={sizes[size]}
-      color="var(--pids-colors--text)"
+      color="var(--pids--color--text)"
       data-testid={`icon-${icon}`}
     />
   );

@@ -1,0 +1,36 @@
+---
+name: Container
+menu: Components
+route: /components/container
+---
+
+import { Playground } from "docz";
+import { Container } from "@pids/components/Container";
+import { Heading } from "@pids/components/Heading";
+import { Text } from "@pids/components/Text";
+
+A `Container` is used to align content to the center of the parent. This component is mainly used to align the main content of the page or application.
+
+## Usage
+
+```ts
+import { Container } from "@pids/components/Container";
+```
+
+<Playground>
+  <Container>
+    <Heading as="h3">This is a heading</Heading>
+    <Text>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec lacus
+      vel purus rutrum facilisis non ac dolor. Quisque eget nibh pellentesque,
+      ornare nulla varius, auctor nulla. Mauris ut urna dolor. Vestibulum
+      posuere turpis felis, vitae varius est mattis eget.
+    </Text>
+    <Text>
+      Curabitur lectus sem, elementum in ipsum id, congue rhoncus urna. Donec
+      bibendum risus vitae bibendum elementum. In in bibendum nibh. Donec
+      ultricies lacus at est semper, id tincidunt odio feugiat. Nullam quis erat
+      aliquet sem lobortis faucibus non eu augue. Vivamus nec ex lectus.
+    </Text>
+  </Container>
+</Playground>

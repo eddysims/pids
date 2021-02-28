@@ -1,0 +1,10 @@
+:root {
+  --pids--container--max-width: calc(var(--pids--space--base) * 48);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--pids--container--max-width);
+  padding-left: var(--pids--space--base);
+  margin: 0 auto;
+}

@@ -2,6 +2,7 @@ import React, { PropsWithChildren } from "react";
 import classnames from "classnames";
 import { useCurrentDoc } from "docz";
 
+import { Container } from "@pids/components/Container";
 import { Heading } from "@pids/components/Heading";
 import { Text } from "@pids/components/Text";
 import { Logo } from "../Logo";
@@ -11,11 +12,6 @@ import { Sidebar } from "../Sidebar";
 import styles from "./Layout.css";
 
 export function Layout({ children }: PropsWithChildren<unknown>) {
-  const { route } = useCurrentDoc();
-  const containerClass = classnames(styles.container, {
-    [styles.homeContainer]: route === "/",
-  });
-
   return (
     <div className={styles.wrapper}>
       <header className={styles.header}>
@@ -26,7 +22,7 @@ export function Layout({ children }: PropsWithChildren<unknown>) {
       </nav>
       <main className={styles.main}>
         <HeroBanner />
-        <div className={containerClass}>{children}</div>
+        <Container>{children}</Container>
       </main>
     </div>
   );
@@ -40,11 +36,11 @@ function HeroBanner() {
 
   return (
     <div className={heroClass}>
-      <div className={styles.container}>
+      <Container>
         {route === "/" && <Logo size="large" />}
         <Heading as="h1">{name}</Heading>
         {description && <Text size="large">{description}</Text>}
-      </div>
+      </Container>
     </div>
   );
 }

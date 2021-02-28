@@ -16,12 +16,22 @@
   max-width: 768px;
 }
 
+.homeContainer {
+  text-align: center;
+}
+
 .main {
   padding-bottom: var(--pids-space--huge);
 }
 
 .hero {
   background: var(--pids-colors--primary);
-  padding: var(--pids-space--largest) 0 var(--pids-space--huge);
-  margin-bottom: var(--pids-space--large);
+  padding: calc(var(--pids-space--huge) * 2) 0;
+  margin-bottom: var(--pids-space--huge);
+}
+
+.heroHome {
+  text-align: center;
+  background: white;
+  border-bottom: 1px solid #eee;
 }

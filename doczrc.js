@@ -6,9 +6,9 @@ export default {
   menu: ["Introduction", "Components", "Styles"],
   typescript: true,
   host: "0.0.0.0",
-  port: 8888,
+  port: 8080,
   files: [
-    "./docs/README.md",
+    "./docs/**/*.{md,mdx}",
     ...packages.map((pack) => `./packages/${pack}/src/**/*.{md,mdx}`),
     ...packages.map((pack) => `./packages/${pack}/CHANGELOG.md`),
   ],

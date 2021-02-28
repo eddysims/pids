@@ -1,13 +1,20 @@
 import React, { PropsWithChildren } from "react";
+import classnames from "classnames";
 import { useCurrentDoc } from "docz";
+
 import { Heading } from "@pids/components/Heading";
+import { Text } from "@pids/components/Text";
+import { Logo } from "../Logo";
 import { Header } from "../Header";
 import { Sidebar } from "../Sidebar";
 
 import styles from "./Layout.css";
 
 export function Layout({ children }: PropsWithChildren<unknown>) {
-  const { name, description } = useCurrentDoc();
+  const { route } = useCurrentDoc();
+  const containerClass = classnames(styles.container, {
+    [styles.homeContainer]: route === "/",
+  });
 
   return (
     <div className={styles.wrapper}>
@@ -18,15 +25,26 @@ export function Layout({ children }: PropsWithChildren<unknown>) {
         <Sidebar />
       </nav>
       <main className={styles.main}>
-        <div className={styles.hero}>
-          <div className={styles.container}>
-            <Heading as="h1">{name}</Heading>
-            {description}
-          </div>
-        </div>
-
-        <div className={styles.container}>{children}</div>
+        <HeroBanner />
+        <div className={containerClass}>{children}</div>
       </main>
+    </div>
+  );
+}
+
+function HeroBanner() {
+  const { name, description, route } = useCurrentDoc();
+  const heroClass = classnames(styles.hero, {
+    [styles.heroHome]: route === "/",
+  });
+
+  return (
+    <div className={heroClass}>
+      <div className={styles.container}>
+        {route === "/" && <Logo size="large" />}
+        <Heading as="h1">{name}</Heading>
+        {description && <Text size="large">{description}</Text>}
+      </div>
     </div>
   );
 }

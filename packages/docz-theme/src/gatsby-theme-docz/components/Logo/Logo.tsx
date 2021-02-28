@@ -1,13 +1,18 @@
 import React from "react";
 
-export function Logo() {
+interface LogoProps {
+  readonly size?: "base" | "large";
+}
+
+export function Logo({ size = "base" }: LogoProps) {
   const heights = {
     base: 48,
+    large: 96,
   };
 
   return (
     <svg
-      height={heights.base}
+      height={heights[size]}
       viewBox="0 0 207 250"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

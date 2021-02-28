@@ -1,0 +1,59 @@
+---
+name: Themeing
+description: Build functionally opinionated design systems that allows you to theme your projects using plain CSS.
+menu: Introduction
+route: /theming
+---
+
+Pids theming is done through CSS and CSS custom properties.
+
+Custom properties have a specific structure that is inspired by BEM (Block Element Modifier).
+
+## Global Styles
+
+Global styles are styles defined in `@pids/styles` and are added to the project. These properties are not meant to be associated with any components.
+
+A few examples of this are `color`, `space`, `font-size`, etc.
+
+These global styles follow the pattern of:
+
+```
+`pids` -- `namespace` -- `property` -- `modifier`
+```
+
+A few examples of this are as follows:
+
+```css
+--pids--space--base
+--pids--space--large
+```
+
+With a modifier:
+
+```css
+--pids--color--background
+--pids--color--grey
+--pids--color--grey--lightest
+```
+
+## Themeing components
+
+Components have a little more of a challenge as the variants grow. The custom properties should follow a structure such as:
+
+```
+`pids` -- `component` -- `property` -- `modifier` -- `value`
+```
+
+A few examples of this are:
+
+```css
+--pids--button--background-color
+--pids--heading--font-size
+```
+
+with a modifier
+
+```css
+--pids--button--background-color--variant--ghost
+--pids--heading--font-size--as--h1
+```

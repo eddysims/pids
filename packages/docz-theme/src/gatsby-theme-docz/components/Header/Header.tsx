@@ -1,12 +1,14 @@
 import React from "react";
 import { useConfig, useCurrentDoc, Link } from "docz";
 import { Icon } from "@pids/components/Icon";
+import { useColorMode } from "@pids/components/ThemeProvider";
 import { Logo } from "../Logo";
 
 import styles from "./Header.css";
 
 export function Header() {
   const { route } = useCurrentDoc();
+  const [colorMode, setColorMode] = useColorMode();
 
   return (
     <div className={styles.header}>
@@ -19,9 +21,17 @@ export function Header() {
       )}
 
       <div className={styles.actions}>
+        {colorMode}
         <GithubStars />
         <Icon icon="Edit" />
-        <Icon icon="Sun" />
+        <button
+          type="button"
+          onClick={() => {
+            setColorMode(colorMode === "default" ? "dark" : "default");
+          }}
+        >
+          <Icon icon={colorMode === "default" ? "Sun" : "Moon"} />
+        </button>
         <Icon icon="Menu" />
       </div>
     </div>

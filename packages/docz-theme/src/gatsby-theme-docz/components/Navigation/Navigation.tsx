@@ -84,6 +84,7 @@ function LinkGroup({ menu }: LinkGroupProps) {
           menu.menu.map((subMenu) => {
             return (
               <Link
+                key={subMenu.id}
                 to={subMenu.route as string}
                 className={styles.levelTwoLink}
               >

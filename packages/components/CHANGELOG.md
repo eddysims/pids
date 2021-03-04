@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/eddysims/pids/compare/@pids/components@0.9.1...@pids/components@0.10.0) (2021-03-04)
+
+### Features
+
+- **components:** add Form placeholder ([a756b61](https://github.com/eddysims/pids/commit/a756b6118e31536a1749806b68b637c890f0d08c))
+
 ## [0.9.1](https://github.com/eddysims/pids/compare/@pids/components@0.9.0...@pids/components@0.9.1) (2021-03-04)
 
 **Note:** Version bump only for package @pids/components

@@ -1,0 +1,27 @@
+---
+name: ThemeProvider
+menu: Components
+route: /components/themeprovider
+---
+
+import { Playground } from "docz";
+import { useContext } from "react";
+import { ThemeProvider, useColorMode } from "@pids/components/ThemeProvider";
+
+<Playground>
+  {() => {
+    const [colorMode, setColorMode] = useColorMode();
+    return (
+      <div>
+        <button
+          onClick={() =>
+            setColorMode(colorMode === "default" ? "dark" : "default")
+          }
+        >
+          Toggle Color Mode
+        </button>
+        Current colorMode: {colorMode}
+      </div>
+    );
+  }}
+</Playground>

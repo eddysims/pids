@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/eddysims/pids/compare/@pids/docz-theme@0.3.0...@pids/docz-theme@0.4.0) (2021-03-04)
+
+### Features
+
+- adds a ThemeProvider component ([#22](https://github.com/eddysims/pids/issues/22)) ([c499d08](https://github.com/eddysims/pids/commit/c499d08da48321a985d98336e2a30b222a061145))
+
 # [0.3.0](https://github.com/eddysims/pids/compare/@pids/docz-theme@0.2.7...@pids/docz-theme@0.3.0) (2021-02-28)
 
 ### Features
